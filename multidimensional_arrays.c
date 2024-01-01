@@ -14,7 +14,7 @@ int main()
   float average;
   int i;
   int j;
-  int grades[2][4];
+  int grades[2][5];
 
   grades[0][0] = 80;
   grades[0][1] = 70;
@@ -29,15 +29,17 @@ int main()
   grades[1][4] = 87;
 
   /* TODO: complete the for loop with appropriate terminating conditions */
-  for (i = 0; i < ; i++)
+  for (i = 0; i < 2; i++)
   {
     average = 0;
-    for (j = 0; j < ; j++)
+    for (j = 0; j < 5; j++)
     {
       average += grades[i][j];
     }
 
     /* TODO: compute the average marks for subject i */
+    average /= 5.0;
+
     printf("The average marks obtained in subject %d is: %.2f\n", i, average);
   }
 
